@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://kit.fontawesome.com/850f5e6943.js" crossorigin="anonymous"></script>
+</head>
+
+<h2>Alteração de Dados</h2>
+<div class="card">
+<div class="card-body">
+<form action='/alterarnovo' method="POST"
+<label for="nome"> Gênero do jogo</label>
+<select value = "titulo" class="form-control" name="titulo">
+    <option>Aventura</option>
+    <option>Ação</option>
+    <option>Battle Royale</option>
+    <option>Casual</option>
+    <option>Corrida</option>
+      <option>Esportes</option>
+      <option>FPS</option>
+      <option>Indie</option>
+      <option>MOBA</option>
+      <option>RPG</option>
+      <option>MMO</option>
+      <option>PvP</option>
+    </select>
+<label for="slug">Nome do jogo</label>
+<input type="text" value = "{{conteudo}}" id="slug"  name="conteudo" placeholder="Jogos" class = "form-control">
+<input type="hidden" name = "id" value = "{{id}}">
+<label for="textlinha">Descrição do Jogo</label>
+<textarea class="form-control" name="descricao" id="texlinha" cols="15" rows="10">{{descricao}}</textarea>
+<br>
+<label for="numberlinha">Preço do Jogo</label>
+<input type="number"class="form-control"name="preco" id="numberlinha" value ="{{preco}}" >
+<br>
+<button class="btn btn-success"><i class="fas fa-exchange-alt"></i> Alterar</button></a></li></i>
+
+</form>
+</div>
+</div>

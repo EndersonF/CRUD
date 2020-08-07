@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://kit.fontawesome.com/850f5e6943.js" crossorigin="anonymous"></script>
+</head>
+
+<h2 class="text-info">Cadastramento de Jogos</h2>
+
+<div class="card">
+<div class="card-body">
+<form action='/add' method="POST"
+<label for="nome"> Gênero do jogo</label>
+<select class="form-control" name="titulo">
+    <option>Aventura</option>
+    <option>Ação</option>
+    <option>Battle Royale</option>
+    <option>Casual</option>
+    <option>Corrida</option>
+      <option>Esportes</option>
+      <option>FPS</option>
+      <option>Indie</option>
+      <option>MOBA</option>
+      <option>RPG</option>
+      <option>MMO</option>
+      <option>PvP</option>
+    </select>
+<label for="slug">Nome do jogo: </label>
+<input type="text" id="slug" name="conteudo" placeholder="Jogos" class = "form-control">
+<label for="textlinha">Descrição do Jogo: </label>
+<textarea class="form-control" name="descricao" id="texlinha" cols="12" rows="5"></textarea>
+<label for="numberlinha">Preço do Jogo R$</label>
+<input type="number"class="form-control"name="preco" id="numberlinha">
+
+<br>
+<button class="btn btn-success"><i class="fas fa-check-circle"></i> Cadastrar</button>
+</form>
+</div>
+</div>

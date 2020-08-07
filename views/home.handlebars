@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://kit.fontawesome.com/850f5e6943.js" crossorigin="anonymous"></script>
+</head>
+
+<h1 class="text-center">Listagem de Jogos</h1>
+
+<div class="contain">
+    
+<style>
+    .contain{display: flex;flex-wrap: wrap;justify-content: center;}
+    .card{margin: 8px;}
+    .list-group-item{display: flex;justify-content:space-between;}
+
+</style>
+
+{{#each posts}}
+<div class="card" style="min-width: 18rem;max-width:18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h3>{{dataValues.conteudo}}</h3></li>
+    <li class="list-group-item"><p>{{dataValues.descricao}}</p></li>
+    <li class="list-group-item"><p>{{dataValues.titulo}}</p><p>R$: {{dataValues.preco}}</p></li>
+    <li class="list-group-item"><a href="/apagar/{{dataValues.id}}"><button class = "btn btn-danger"><i class="fas fa-trash-alt"></i> Apagar</button></a>
+    <a href="/alterar/{{dataValues.id}}"><button class = "btn btn-success"><i class="fas fa-exchange-alt"></i> Alterar</button></a></li>
+  </ul>
+</div>
+
+    {{!-- <h1>{{dataValues.conteudo}}</h1>
+    <p>{{dataValues.titulo}}</p>
+    <a href="/apagar/{{dataValues.id}}"><button class = "btn btn-danger">Apagar</button></a>
+    <a href="/alterar/{{dataValues.id}}"><button class = "btn btn-success">Alterar</button></a> --}}
+{{/each}}
+</div>
